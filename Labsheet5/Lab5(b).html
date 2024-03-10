@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    
+    <title>Square Of Numbers</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var num;
+        num=prompt("Enter a number");
+        num=parseInt(num);  
+        var mgstr;
+        if(num>0&& num!=null)
+        {
+        mgstr="Numbers and its Square are \n";
+        for(var i=1;i<=num;i++)
+        {
+            document.write(i+"*"+i+"="+i*i+"<br/>");
+        }
+        
+        }
+        else
+        {
+            alert("Invalid Input");
+        }
+    </script>
+</body>
+</html>
