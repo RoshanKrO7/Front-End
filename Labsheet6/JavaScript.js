@@ -23,7 +23,7 @@ document.getElementById("dob").addEventListener("change", function() {
     }
 });
 
-// inline validation
+
 document.querySelectorAll("input[required]").forEach(input => {
     input.addEventListener("invalid", function() {
         this.setCustomValidity("Please fill out this field.");
