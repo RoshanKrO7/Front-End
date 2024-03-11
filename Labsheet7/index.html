@@ -1,0 +1,51 @@
+<!-- Create an online student registration page for Presidency university. The page should contain the following fields in the specified format and develop the JavaScript validation code as per the comditiomns spevified below:
+a.> First Name(should not be empty, name should contain only alphabets and the length should not be less than 6 characters)
+b.> Last Name(Only alphabets should be allowed)
+c.> Email ID(should not contaian any invalid and must follow the standard format)
+d.> Password(Password should not be less than 6 characters length and enter onlu numbers, letters)
+e.> Address (should not be empty   )
+f.> Mobile number(Accept only 10 digits and only numbers)
+g.> Gender
+H.> Submit button and cancel button
+Data entry for all fields are mandatory as per validation coditions and if any of the condition is not specified appropriate error message should be displayed or on successful entery of all fields, the data should be displayed in the alert box message "Registrtion Done Successfully" -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="./javascript.js"></script>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form onsubmit="return validateForm()">
+        <label for="firstName" >First Name:</label><font color="red">*</font>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" required><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+        <input type="button" value="Cancel">
+    </form>
+</body>
+</html>
